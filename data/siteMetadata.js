@@ -11,7 +11,7 @@ const siteMetadata = {
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'alex@baguetteboy.com',
-  github: 'https://github.com',
+  github: 'https://github.com/yaboiwierdal',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

@@ -6,7 +6,7 @@ const components = {
   github: Github,
 }
 
-const SocialIcon = ({ kind, href, classNames="h-8 w-8" }) => {
+const SocialIcon = ({ kind, href, classNames = "h-8 w-8" }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null
 
@@ -21,7 +21,7 @@ const SocialIcon = ({ kind, href, classNames="h-8 w-8" }) => {
     >
       <span className="sr-only">{kind}</span>
       <SocialSvg
-        className={`fill-current text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 ${claassNames}`}
+        className={`fill-current text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 ${classNames}`}
       />
     </a>
   )

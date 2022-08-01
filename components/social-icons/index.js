@@ -6,7 +6,7 @@ const components = {
   github: Github,
 }
 
-const SocialIcon = ({ kind, href, classNames = "h-8 w-8" }) => {
+const SocialIcon = ({ kind, href, classNames = 'h-8 w-8' }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null
 
